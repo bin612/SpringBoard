@@ -54,12 +54,20 @@ public class Member extends BaseTimeEntity {
         this.age = age;
     }
 
+
+    /*
+    * 패스워드 암호화
+    * */
     public void encodePassword(PasswordEncoder passwordEncoder) {
         this.password = passwordEncoder.encode(password);
     }
 
-    public enum Role {
-        USER, ADMIN
+    /*
+    * 권한 부여
+    * */
+
+    public void addUserAuthority() {
+        this.role = Role.USER;
     }
 }
 
