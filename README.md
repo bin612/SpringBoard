@@ -1,5 +1,39 @@
 # Spring Board
 
+### 현재까지 경로
+```bash
+root
+├── main
+│   ├── generated
+│   ├── java
+│   │   └── com
+│   │       └── example
+│   │           └── notice
+│   │               ├── NoticeApplication.java
+│   │               └── domain
+│   │                   ├── BaseTimeEntity.java
+│   │                   └── member
+│   │                       ├── Member.java
+│   │                       ├── Role.java
+│   │                       └── repository
+│   │                           └── MemberRepository.java
+│   └── resources
+│       ├── application.yml
+│       ├── static
+│       └── templates
+└── test
+    └── java
+        └── com
+            └── example
+                └── notice
+                    ├── NoticeApplicationTests.java
+                    └── domain
+                        └── member
+                            └── repository
+                                └── MemberRepositoryTest.java
+```
+
+
 - Spring h2 database connection
 - testing success
 
